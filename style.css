@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body, html {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+.outer_pop_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 26.56%;
+  right: 26.46%;
+  top: 4.04%;
+  bottom: 44.92%;
+  width: 481px;
+  height: 392px;
+}
+
+.inner_pop_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 481px;
+  height: 392px;
+  padding: 0px 40px 0px 40px;
+  border-radius: 12px;
+  border: 1px solid #F7F5F9;
+  background-color: #F7F5F9;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inner_pop_up p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.inner_pop_up input {
+  height: 48px;
+  width: 387px;
+  padding-left: 14px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.inner_pop_up input:hover {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #854FC8;
+}
+
+.inner_pop_up input:focus {
+  outline: none;
+  border-radius: 0px;
+  border: 1px solid #854FC8;
+}
+
+.inner_pop_up input::-webkit-input-placeholder {
+  color: #D0C9D6;
+}
+
+.inner_pop_up input:-ms-input-placeholder {
+  color: #D0C9D6;
+}
+
+.inner_pop_up input::-ms-input-placeholder {
+  color: #D0C9D6;
+}
+
+.inner_pop_up input::placeholder {
+  color: #D0C9D6;
+}
+
+.inner_pop_up button {
+  height: 48px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  background: #6979F8;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.inner_pop_up button:hover {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #854FC8;
+}
+
+.inner_pop_up button:focus {
+  outline: none;
+  border-radius: 0px;
+  border: 1px solid #854FC8;
+}
+/*# sourceMappingURL=style.css.map */

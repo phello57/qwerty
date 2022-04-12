@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!--- POP_UP --->
+<div class="papper"></div>
+<div class="outer_pop_up">
+    <div class="inner_pop_up">
+        <p>Задать вопрос</p>
+        
+            <input required type="text" class='fullName' name="fullName" pattern="[А-Яа-я0-9Ёё -]+" title="Русские буквы, тире, пробел" placeholder="Фамилия Имя Отчество *">
+            <input required type="text" class='phoneNumber 'name="phoneNumber" pattern="[0-9+- ()]+" title="Только цифры" placeholder="Телефон *">
+            <input type="email" class='email' name="email" placeholder="Email">
+            <button class="buttonPopUp">ОТПРАВИТЬ ЗАПРОС</button>
+        
+    </div>
+</div>
+</div>
+<!--- / POP_UP --->
+
+
+<script>
+
+
+    $(document).ready(function(){
+        $('button.buttonPopUp').on("click", function() {
+            var fullNameValue = $('input.fullName').val();
+            var phoneNumberValue = $('input.phoneNumber').val();
+            var emailValue = $('input.email').val();
+            $.ajax({
+                method: "post",
+                url: "some.php",
+                data: { fullName: fullNameValue, 
+                        phoneNumber: phoneNumberValue,
+                        email: emailValue
+                } 
+            })
+            })
+        })
+        
+</script>
+</body>
+</html>
+
+
